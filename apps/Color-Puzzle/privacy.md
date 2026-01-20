@@ -1,13 +1,16 @@
 ---
-layout: default
-title: プライバシーポリシー
----
 <style>
-  /* 上部のデカいヘッダー（リポジトリ名）を強制的に消す */
-  header { display: none !important; }
-  /* 全体の余白調整 */
+  /* ヘッダーと思われる要素をすべて消す */
+  header, .site-header {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+  }
+  /* 本文の開始位置を調整 */
   .wrapper { margin-top: 20px !important; }
-  /* スマホで見やすくする */
+  /* 全体のフォント調整 */
   body { font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif; }
 </style>
 
