@@ -1,0 +1,23 @@
+{
+    "applinks": {
+        "details": [
+            {
+                "appIDs": [ "S2VP92H5D5.com.saikyocity.Color-Puzzle" ],
+                "components": [
+                    {
+                        "/": "*"
+                    }
+                ]
+            }
+        ]
+    },
+    "appclips": {
+        "apps": [ "S2VP92H5D5.com.saikyocity.Color-Puzzle.Clip" ],
+        "components": [
+            {
+                "/": "/apps/color-puzzle/manakana/*",
+                "comment": "Allows App Clip only on this specific path"
+            }
+        ]
+    }
+}
