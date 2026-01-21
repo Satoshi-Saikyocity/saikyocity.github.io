@@ -1,18 +1,6 @@
 ---
-<style>
-  /* ヘッダーと思われる要素をすべて消す */
-  header, .site-header {
-    display: none !important;
-    visibility: hidden !important;
-    height: 0 !important;
-    padding: 0 !important;
-    border: none !important;
-  }
-  /* 本文の開始位置を調整 */
-  .wrapper { margin-top: 20px !important; }
-  /* 全体のフォント調整 */
-  body { font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif; }
-</style>
+layout: false
+---
 
 # プライバシーポリシー
 
