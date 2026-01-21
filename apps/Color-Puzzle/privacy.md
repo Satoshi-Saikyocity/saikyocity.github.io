@@ -1,6 +1,7 @@
 ---
 layout: false
 ---
+<title>Color-Puzzle - プライバシーポリシー</title>
 
 # プライバシーポリシー
 
