@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>西京都 - Saikyo City</title>
+    <style>
+        /* 全体の設定 */
+        body {
+            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #fff;
+            line-height: 1.6;
+        }
+        a { text-decoration: none; color: inherit; transition: opacity 0.3s; }
+        a:hover { opacity: 0.7; }
+
+        /* ヘッダー */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #fff;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .logo { font-size: 24px; font-weight: bold; letter-spacing: 2px; }
+        nav ul { display: flex; list-style: none; padding: 0; margin: 0; }
+        nav li { margin-left: 30px; font-size: 14px; font-weight: 500; }
+        
+        /* スマホ用メニュー調整 */
+        @media (max-width: 768px) {
+            header { flex-direction: column; padding: 15px; }
+            nav ul { margin-top: 15px; flex-wrap: wrap; justify-content: center; }
+            nav li { margin: 5px 10px; }
+        }
+
+        /* ヒーローセクション（トップ画像） */
+        .hero {
+            background-color: #f4f4f4; /* 画像がない場合の背景色 */
+            background-image: url('https://static.wixstatic.com/media/963bc6_3af97d9bbe27475e92d6d50e78543369~mv2.png'); /* 仮でWixの画像を使用 */
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+        .hero h1 { font-size: 48px; margin: 0; }
+        .hero p { font-size: 18px; margin-top: 10px; }
+
+        /* メインコンテンツ */
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+        
+        .intro { text-align: center; margin-bottom: 60px; }
+        .intro h2 { font-size: 28px; margin-bottom: 20px; }
+
+        /* ニュースカード */
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        .news-card {
+            border: 1px solid #eee;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+        .news-card:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .news-img {
+            width: 100%;
+            height: 200px;
+            background-color: #ddd;
+            object-fit: cover;
+        }
+        .news-content { padding: 20px; }
+        .news-date { font-size: 12px; color: #888; margin-bottom: 5px; }
+        .news-title { font-size: 18px; font-weight: bold; margin: 0 0 10px 0; }
+        .news-desc { font-size: 14px; color: #666; }
+
+        /* フォームセクション */
+        .form-section {
+            background-color: #f9f9f9;
+            padding: 40px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        /* フッター */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 12px;
+        }
+        footer a { color: #fff; margin: 0 10px; }
+        .disclaimer { color: #888; margin-top: 20px; font-size: 10px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">西京都</div>
+        <nav>
+            <ul>
+                <li><a href="#">ホーム</a></li>
+                <li><a href="#">マップ紹介</a></li>
+                <li><a href="#">募集</a></li>
+                <li><a href="#">ニュース</a></li>
+                <li><a href="#">アドオン</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <div>
+            <h1>SAIKYO CITY</h1>
+            <p>Minecraft Bedrock Edition Modern City Project</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="intro">
+            <h2>進化し続ける都市</h2>
+            <p>西京都はMinecraft 統合版で開発されている現代都市ワールドです。<br>
+            2020年の運営開始から今も発展を続けています。<br>
+            世界初の技術を搭載したアドオン開発など、建築だけではない多様な活動を行なっています。</p>
+        </div>
+
+        <div class="news-grid">
+            <article class="news-card">
+                <img src="https://placehold.co/600x400/png?text=Discord" alt="Discord連携" class="news-img">
+                <div class="news-content">
+                    <div class="news-date">2025年9月22日</div>
+                    <h3 class="news-title">ゲーム内チャットがDiscordと連携</h3>
+                    <p class="news-desc">ゲーム内とDiscord間で双方向で会話が可能になりました。</p>
+                </div>
+            </article>
+
+            <article class="news-card">
+                <img src="https://placehold.co/600x400/png?text=Train" alt="北陸本線" class="news-img">
+                <div class="news-content">
+                    <div class="news-date">2025年4月15日</div>
+                    <h3 class="news-title">西京都で北陸本線を作ろう！</h3>
+                    <p class="news-desc">富山駅再現を中心に北陸本線を作る新規メンバー大募集中！</p>
+                </div>
+            </article>
+
+            <article class="news-card">
+                <img src="https://placehold.co/600x400/png?text=Free" alt="参加費無料" class="news-img">
+                <div class="news-content">
+                    <div class="news-date">2024年12月19日</div>
+                    <h3 class="news-title">参加費が無料になりました！</h3>
+                    <p class="news-desc">誰でも気軽に西京都に参加できるようになりました。</p>
+                </div>
+            </article>
+        </div>
+
+        <div class="form-section" id="contact">
+            <h2>お問い合わせ / 参加申請</h2>
+            <p>以下のフォームよりご連絡ください。</p>
+            
+            <div style="margin-top: 20px;">
+                <p style="padding: 40px; border: 2px dashed #ccc; color: #888;">
+                    ここにGoogleフォームの埋め込みコードを貼り付けてください
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>
+            <a href="#">西京都とは</a>
+            <a href="#">よくある質問</a>
+            <a href="#">利用規約</a>
+            <a href="https://twitter.com/Saikyo_City" target="_blank">Twitter</a>
+        </p>
+        <p class="disclaimer">
+            MinecraftはMicrosoft社の商標です。<br>
+            本ページはMojang Studiosの承認を得ているものではなく、公式ではありません。
+        </p>
+        <p>&copy; Saikyo City All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
