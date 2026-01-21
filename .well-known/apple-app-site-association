@@ -5,7 +5,8 @@
                 "appIDs": [ "S2VP92H5D5.com.saikyocity.Color-Puzzle" ],
                 "components": [
                     {
-                        "/": "*"
+                        "/": "/apps/color-puzzle/manakana/*",
+                        "comment": "Matches only the game URL"
                     }
                 ]
             }
