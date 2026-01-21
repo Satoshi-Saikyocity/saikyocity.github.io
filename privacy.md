@@ -1,7 +1,7 @@
 ---
 layout: false
 ---
-<title>Saiko App Store - プライバシーポリシー</title>
+<title>Saiko City App Store - プライバシーポリシー</title>
 
 # プライバシーポリシー
 
