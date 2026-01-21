@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saikyocity Apps</title>
+    <style>
+        /* 全体の設定：Appleっぽいフォントと色 */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f7; /* 薄いグレーの背景 */
+            color: #1d1d1f;
+        }
+
+        /* ヘッダー部分 */
+        header {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid #d2d2d7;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        h1 {
+            margin: 0;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        /* アプリ一覧の枠 */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* アプリカードのデザイン */
+        .app-card {
+            background-color: #fff;
+            border-radius: 18px;
+            padding: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+        }
+        .app-card:active {
+            transform: scale(0.98);
+        }
+
+        /* アプリアイコン */
+        .app-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 18px;
+            border: 1px solid #e5e5e5;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+
+        /* テキスト情報 */
+        .app-info {
+            flex-grow: 1;
+        }
+        .app-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin: 0 0 4px 0;
+        }
+        .app-subtitle {
+            font-size: 14px;
+            color: #86868b;
+            margin: 0;
+        }
+
+        /* 入手ボタン（App Store風） */
+        .get-button {
+            background-color: #0071e3;
+            color: white;
+            padding: 6px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            white-space: nowrap;
+        }
+        
+        /* フッター */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 12px;
+            color: #86868b;
+        }
+        footer a {
+            color: #86868b;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        /* スマホ向けの微調整 */
+        @media (max-width: 480px) {
+            .app-card {
+                padding: 15px;
+            }
+            .app-icon {
+                width: 64px;
+                height: 64px;
+                margin-right: 15px;
+            }
+            .app-title { font-size: 16px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Saikyocity Apps</h1>
+    </header>
+
+    <div class="container">
+        
+        <div class="app-card">
+            <img src="https://saikyocity.com/apps/color-puzzle/icon.png" alt="Color Puzzle Icon" class="app-icon" onerror="this.src='https://placehold.co/150'">
+            
+            <div class="app-info">
+                <h2 class="app-title">Color Tile Puzzle</h2>
+                <p class="app-subtitle">4x4の頭脳戦パズルゲーム</p>
+            </div>
+            
+            <a href="https://apps.apple.com/app/idXXXXXXXXXX" class="get-button" target="_blank">入手</a>
+        </div>
+        </div>
+
+    <footer>
+        <p>&copy; 2026 Saikyocity</p>
+        <p>
+            <a href="https://saikyocity.com/apps/Color-Puzzle/privacy">プライバシーポリシー</a>
+        </p>
+    </footer>
+
+</body>
+</html>
