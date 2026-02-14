@@ -53,16 +53,13 @@
             border: 1px solid #e5e5e5;
             object-fit: cover;
             margin-right: 20px;
-            /* 変化を滑らかにする設定 */
             transition: filter 0.3s ease;
         }
 
-        /* --- 今回追加した「入手不可」時のアイコン演出 --- */
         .disabled-app .app-icon {
-            filter: brightness(0.5); /* 50%の明るさに落とす */
-            opacity: 0.8;            /* 少し透明にする */
+            filter: brightness(0.5);
+            opacity: 0.8;
         }
-        /* ------------------------------------------ */
 
         .app-info {
             flex-grow: 1;
@@ -132,7 +129,7 @@
         </div>
 
         <div class="app-card disabled-app">
-            <img src="https://saikyocity.com/apps/TID/icon.JPG" alt="TID Icon" class="app-icon" onerror="this.src='https://placehold.co/150'">
+            <img src="https://saikyocity.com/apps/TID/icon.png" alt="TID Icon" class="app-icon" onerror="this.src='https://placehold.co/150'">
             <div class="app-info">
                 <h2 class="app-title">TID</h2>
                 <p class="app-subtitle">Ver-2.1.5</p>
