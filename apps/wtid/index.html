@@ -53,7 +53,16 @@
             border: 1px solid #e5e5e5;
             object-fit: cover;
             margin-right: 20px;
+            /* 変化を滑らかにする設定 */
+            transition: filter 0.3s ease;
         }
+
+        /* --- 今回追加した「入手不可」時のアイコン演出 --- */
+        .disabled-app .app-icon {
+            filter: brightness(0.5); /* 50%の明るさに落とす */
+            opacity: 0.8;            /* 少し透明にする */
+        }
+        /* ------------------------------------------ */
 
         .app-info {
             flex-grow: 1;
@@ -97,11 +106,6 @@
             font-size: 12px;
             color: #86868b;
         }
-        footer a {
-            color: #86868b;
-            text-decoration: none;
-            margin: 0 10px;
-        }
 
         @media (max-width: 480px) {
             .app-card { padding: 15px; }
@@ -127,7 +131,7 @@
             <a href="itms-services://?action=download-manifest&url=https://saikyocity.com/apps/wtid/manifest.plist" class="get-button">入手</a>
         </div>
 
-        <div class="app-card">
+        <div class="app-card disabled-app">
             <img src="https://saikyocity.com/apps/tid/icon.JPG" alt="TID Icon" class="app-icon" onerror="this.src='https://placehold.co/150'">
             <div class="app-info">
                 <h2 class="app-title">TID</h2>
@@ -138,6 +142,9 @@
 
     </div>
 
+    <footer>
+        <p>&copy; 2024 Your Name</p>
+    </footer>
 
 </body>
 </html>
