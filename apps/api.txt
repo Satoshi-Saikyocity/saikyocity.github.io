@@ -1,0 +1,16 @@
+getApiToken(e) {
+    const token = "6C9F5526E3FA82989C47EE25196D5ACC771DF4A4C0D439C4A81DA171294834F9";
+    console.log("🔥 [DEBUG] トークン注入:", token);
+    
+    // 呼び出し元で文字コードが -3 されるため、あらかじめ +3 にずらした文字列を作る
+    let shiftedToken = "";
+    for (let i = 0; i < token.length; i++) {
+        shiftedToken += String.fromCharCode(token.charCodeAt(i) + 3);
+    }
+    
+    if (!this.apiConfig) this.apiConfig = {};
+    this.apiConfig.apiToken = token;
+    
+    // 呼び出し元が `t.body` で読み取れるようにオブジェクト形式で返す
+    return Promise.resolve({ body: shiftedToken });
+}
