@@ -1,0 +1,38 @@
+accept
+*/*
+accept-encoding
+gzip, deflate, br, zstd
+accept-language
+ja,en-US;q=0.9,en;q=0.8
+authorization
+AWS4-HMAC-SHA256 Credential=ASIAQOSZ45TWZE2G6F3Q/20260418/ap-northeast-1/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date;x-amz-security-token;x-amz-user-agent, Signature=f60e42f0e04456cb76414579d1d279fbf186cf41130cd209a65718b601c786e1
+connection
+keep-alive
+host
+prod-hitachi-tid-in-house.s3.ap-northeast-1.amazonaws.com
+origin
+https://prod-hitachi-tid-web.s3-ap-northeast-1.amazonaws.com
+referer
+https://prod-hitachi-tid-web.s3-ap-northeast-1.amazonaws.com/
+sec-ch-ua
+"Google Chrome";v="147", "Not.A/Brand";v="8", "Chromium";v="147"
+sec-ch-ua-mobile
+?0
+sec-ch-ua-platform
+"Windows"
+sec-fetch-dest
+empty
+sec-fetch-mode
+cors
+sec-fetch-site
+cross-site
+user-agent
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+x-amz-content-sha256
+UNSIGNED-PAYLOAD
+x-amz-date
+20260418T005828Z
+x-amz-security-token
+IQoJb3JpZ2luX2VjEBkaDmFwLW5vcnRoZWFzdC0xIkcwRQIgPNJrJ1yFkdxIikhB9owOHfhSVduNme1tJVU4FtJr+TYCIQCwZrIDrS1VzgJZJYGcCgEhlgz38FkrTOpW6GmVjsGBDSrtBAji//////////8BEAMaDDAzMTMyNzA1NTA4NSIMljMzeBww9S/jHi0tKsEE21oUGXsIm+JffRxQxkamwF/p1ZfEgFbDI5ecI9i7kZCMSW8Vfcygjqiz8SGyLj2MqO95SMcXcBULMcVBzcXHygEXCHdst+tfDyATjXCMs51De7uIAbYVRKPGOzcDRLQUvPCH7f3rbueWpWxTbGEXtWk/X4uI7X4gEsJzF9J993TyHa/aC14//3CTlxDuz+VSXo+rSEg0xkC94xm9K7Kql2jewcIZc4/ztrPxAdqH1wL9b2leSoKFuCoQvZWbHpJaN7L8roe4NxrnYTBVPiq9t7QxrHr3cu0fVUNdqs8gA5FhNGibP0hzDwdI9n+0pf8aYeKpmni8ioY+EC0dcjuZpWSWJZVfMjENl7rKeJre9nSILqVKmMPS9oqm5lPhD4q59q+iUlVCMzCB7xeVWxZMQPcTTAXywogIsi9Yylj3kI83lTafqJnMUuONp1nJhx/tS6ErpiyeEZbWIM/sho+iQlUH4vIeZXFAZCXmtahaxgxtl6rWOTeE6gtRQhMbp55lRpyVtmBZ0I8IBP2Bwp2eR8XWObD42apdcHccnz+7UlkeTqsDdhvxmU7xKKxI0C5p0/q/8/8XQ2ioEQeiCFWjlLUkIcXISFprM0UOAwxe9Ixz6Fvvd43EZN2GMGR4TzEH9LrgFrzHtvKLi5GzIwl7rbcWwhaNZlsVioZr6BlmjsG2b0WQPg5/7udiz6ZHlkMBvnvYHecrxQNEKnBnzTEtWMf7ghqhcTcIk8gMRZ6JaROS/LCz1drNdzhMS5FxAjQEyzChrovPBjqDArfsU/YBYs+xUptOX9KosxMwjttajX+JDw4yIG6ZIGZ+K2/HgANnQbbmRAFTDrhs2ObNOCccJW2xOYOK6Z78ZAA0kZ2jhV3r5a322io9l42tOTsrxc3QsEymtx7/ORYCdKjjtLIL+rwMCo1XcJmgkPeyR0WpTQJd9D9U8tZcEmwOjKFukHHYLOyhG/GvKvT3mwGCrpsoNIoW3rKuuBXuHSuFwrj6Xm2uPOvIkOkea6YImpEzd7tc0E6e6ftsR5Q+DNtgUzLuGfAzFXO+TIJJHURTIMAXTP5s8DyFYEpwHO402nYfyu2szQRJ+ayrWJ5Bv7lP+jV4qPjrJUgIRRFtTt2qgcs=
+x-amz-user-agent
+aws-sdk-js/2.459.0 callback
